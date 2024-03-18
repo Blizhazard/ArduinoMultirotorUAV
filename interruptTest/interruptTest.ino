@@ -1,7 +1,6 @@
 // Define pin numbers and variables
 const int interruptPin = 2;  // Example interrupt pin (change according to your setup)
 
-<<<<<<< HEAD
 // Define debounce period in milliseconds
 const unsigned long debouncePeriod = 50; // Adjust as needed
 
@@ -30,14 +29,6 @@ void handleInterrupt() {
         Serial.println("LOW");
       }
     }
-=======
-// Interrupt Service Routine (ISR) function
-void handleInterrupt() {
-  if (digitalRead(interruptPin) == HIGH) {
-    Serial.println("HIGH")
-  } else {
-    Serial.println("LOW")
->>>>>>> cf5a32ff51ecef69e1674fa778c44f97cd1bf349
   }
 }
 
@@ -49,18 +40,11 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(interruptPin), handleInterrupt, CHANGE);
 
   // Other setup code
-<<<<<<< HEAD
   Serial.begin(115200);
-=======
-  Serial.begin(9600);
->>>>>>> cf5a32ff51ecef69e1674fa778c44f97cd1bf349
 }
 
 void loop() {
   // Your main code here
-<<<<<<< HEAD
   Serial.println("runtime");
   delay(10);
-=======
->>>>>>> cf5a32ff51ecef69e1674fa778c44f97cd1bf349
 }
