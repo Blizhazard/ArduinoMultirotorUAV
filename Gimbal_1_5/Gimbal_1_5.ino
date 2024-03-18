@@ -121,14 +121,13 @@ void handleInterrupt() {
       }
     }
   }
+}
+void setGyroServo() {
+  msp_attitude_t attitude;
+  msp.request(MSP_ATTITUDE, &attitude, sizeof(msp_attitude_t));
 
-  void setGyroServo() {
-    msp_attitude_t attitude;
-    msp.request(MSP_ATTITUDE, &attitude, sizeof(msp_attitude_t));
-
-    Servo1.write((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 60);
-    Serial.println("\n" + String(attitude.pitch));
-    Servo2.write((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 75);
-    Serial.println(attitude.roll);
-  }
+  Servo1.write((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 60);
+  Serial.println("\n" + String(attitude.pitch));
+  Servo2.write((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 75);
+  Serial.println(attitude.roll);
 }
