@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\joshu\\OneDrive - University of Southampton\\Year 2\\Design\\Multirotor UAV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\joshu\\OneDrive - University of Southampton\\Year 2\\Design\\Multirotor UAV\\Gimbal_1_5\\Gimbal_1_5.ino||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Gimbal_1_5\\Gimbal_1_5.ino||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gimbal_1_5.ino",
+              "DocumentMoniker": "C:\\Users\\joshu\\OneDrive - University of Southampton\\Year 2\\Design\\Multirotor UAV\\Gimbal_1_5\\Gimbal_1_5.ino",
+              "RelativeDocumentMoniker": "Gimbal_1_5\\Gimbal_1_5.ino",
+              "ToolTip": "C:\\Users\\joshu\\OneDrive - University of Southampton\\Year 2\\Design\\Multirotor UAV\\Gimbal_1_5\\Gimbal_1_5.ino",
+              "RelativeToolTip": "Gimbal_1_5\\Gimbal_1_5.ino",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAcFSURBVFhHzVZrbBxXFf5mZt/vtbO7tmvHdRs7jpM6TRsgbkhFqASEUpB5CIQEKuFHUYVKG2iRyo\u002BCoKBShAoByqugpKgiEvkRVS1q1SaCRg1VHScEx8ROQu04ceysd9f2rndnZndm\u002BM54E0wSUCAYONLRvXPvmXO\u002B85zB/5Qcx1HqW5dqto37D76Bz67uTEyWFzaUqtUey3FilKTc34leAzlkBaqiLIQ9nhOZYGhwc1MqW6rWEPV5F0VIl7QemppGJhj0HJq\u002B8IHJhfJDBdPYqFtWyHZE0b9PBACfqukJv2\u002BoJRT6wdpkcs\u002B8aepbW1vcexfAqxPn0JNMevaNjX3\u002B9Pz8V/OGEb9Ou1cQcSDu81U6otGn3p5Ofz2v65VtN66Esu/0GAZnZtAcCvUPFwq/zOl6/F8N9rWS\u002BEQQxppk4sGdQ8d//J1Nm6DsHh6Rw8TBqal9bxWLd/6HHb8qtYbDw29Lpd5nWtaE8sSbR5gnbD2Syz1fMMywhGpZiR6GvV5rfUPy0\u002BWa9Zw6OjuLbEVfK8ZZdNBry8sV2pgzDY02e589dQrqRHkBpaoZK9dqEAAisJwsNug5FqrV2MSBV6FWBBV7c6nA5SznZWtR5mr3S/laZSt0GJoGVbdsNzQGV5ODyFjCrhKuQY8HqUAQUa8XNfZnmedL5YTlTN4PexdlZZXnq8mKTrEJjxceERJEslYdu14pgM1i6YxF8fFVN6GvKYNkwI8yI3U8l8fev7yF16cvwJKWYdFK3d7W2IiP3tyBDakV7qQrmlUcvpDFnlOncSxf4Bz4W3XLcBKbAkCt2jTOkInxKq1W6aGg3LiiAd/bvAmf6rwZHr2C0fFxFAt5vLs5g6d4fl93FzzUKZPyEzd1YOc7\u002B/DBla0w5\u002BcoO4ZacR797W34/uY\u002B3NXcRBuWq1tsyMiXZ/g88HDWu97LahOEeN4cCODh3luQZhiffOkl7B09iQIvgszZOzIpPHDHHbivpxsm81igpzt61yLHbnr8969h/\u002BQkSpSNM13bOtrxhS1b8KX163CK9yOlBdd7iVmVNsHUqvwguYj4ZXLD4/DlO5vS6IpF8NzAAJ4\u002BMYrJcBSVZCPy0ThenC3i4f0HMMJvx/bVXXhwXQ\u002ByhQK\u002B/OJvsef8NPyZZtxz\u002B\u002B2Yjcawe2ISPz08iAwdem9LE8NVTzFNuTZ9PgEANywXiUMJq6NRlCoVvHL2HJREEvesWoXta1bjM2u60ZXO4E81GzupWDdNKEzhT/7wBg6VK2hvacH2njX4HGU/3NGBAEEcyOaQpeddkQh8l2qMTothRkl16g/1AECRPfOjs\u002BCqHiJk2BtMA02cF5lyCUGj4hZPkeGrVE1UmIIiZZxQBAGGNmbo0GmwQS9Dq1VR453OVNlkRfJep0sAxHnJh00gbjrIJ/N5NyUbWf1yt3tsHN8aGsYTx/\u002BMY/NFtIdCuLer033ZrFbxyZ4e9CTiGCkWwY8MfnVkEM\u002BMjKLE1t7Q0IAA8z6azbqtLjbEZk2iIXPA4cZ9EERklehePz\u002BFMYJ4f1sr7m5pRiQchhaPw8903JpO44vdnVhFEPv\u002BeBTPDryJFNtuB7tiM1swp2r4zfQMPLE4tjLvH2NnZNkZ\u002B\u002BmEo1G72KG7ltSAqkJL9n8EXihb2Al3SWikX\u002BcY2jxb7taGJPpY9b00vi4ew3tYnP1tNyBDgy8PD\u002BMX9PJoqQyFYb8tlUJfegXWJRJYTyDb\u002BMMh4FWmYdfhwzhUZAdwQIl\u002B6QOfogxkDf0FLfGhfngEgEMA9SgoRHaGeRw9N4kgkbaGgmgPBhDjm2cYyl8fPYa9E2dRjsRg\u002B4MYmslhfHoKUSpvo\u002BxKygapZ\u002BT8eew6chS/m50HIlHXY1c/zXCGDMwYxgvKjc/sgl9VH\u002BV4fHxJMxAlc2UY8FbKaOQbEb4s0yvH4iz7/FCZFoXFSHVUyhrSdQRYoI18DFFWPm45jludXmuhsJtvV1Z0cwmo6tOj83P3qw49vMgKFV1ktx4Y6hpbaSoQxkl2xFl/CDrrQKM3iuape0N5KtX8fpiUnQyEXNnJYBhmogFaOLLE87pu2rKlIxSVNVd/ULhycxkvKlc9GjQZGgQk6aG2K2VdIPwLZnu6smwxV9Y1eJks9boOi25VHixrAYKIbXIl/6Pzq/Hlsv9Mp7WQZseo7nCwrBNkvX6x7EybDp0eDjGSTAEPbXuQh0MC5r/EYwRyUPaqhMQwjCwPfuTUajoZy8wWbf38Xd23nLxYY2h/8rtSQAHbth/jqHyIR345XwayOIh2qaqyg00xN/7IjkUAQm3f/Lb0J\u002BeOcy9b5gGWbyePtcXb6yZWnnKGBn6mqMoPmfq5iUcfcS8uARC64WvfkIXBUNoIYgv3veSoHF4HlcnD1PkaDZ/m3j732Ffci/8DAv4KLVSNnNz6d2oAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-03-18T10:54:26.091Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
