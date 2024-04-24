@@ -10,7 +10,7 @@ volatile bool ini = false;
 const int interruptPin = 2;
 
 // Define debounce period in milliseconds
-const unsigned long debouncePeriod = 50;  // Adjust as needed
+const unsigned long debouncePeriod = 500;  // Adjust as needed
 // Variables to store last trigger time and interrupt state
 volatile unsigned long lastTriggerTime = 0;
 int interruptState = 1800;
@@ -51,7 +51,8 @@ void loop() {
   msp.request(MSP_ATTITUDE, &attitude, sizeof(msp_attitude_t));
 
   //if (msp.request(MSP_ATTITUDE, &attitude, sizeof(msp_attitude_t)) {
-  /*myFile = SD.open("gyro.txt", FILE_WRITE);
+  /*
+  myFile = SD.open("gyro.txt", FILE_WRITE);
     if (myFile) {
       int16_t yaw;
       yaw = attitude.yaw;
@@ -77,8 +78,9 @@ void loop() {
   Serial.println(attitude.roll);
 */
 
-  if (on = true) {
+  if (on == true) {
     setGyroServo();
+    Serial.println("setting gyro pos");
   } else {
     Servo1.write(90);
     Servo2.write(90);
