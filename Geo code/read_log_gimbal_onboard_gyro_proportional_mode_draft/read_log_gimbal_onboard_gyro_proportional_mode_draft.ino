@@ -41,9 +41,9 @@ void loop() {
   AUX2 = 2000;
   if (AUX2 >= 1110) {
     Servo1.write((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0)/4.0)+60);
-    Serial.println("\n" + String(attitude.pitch));
+    Serial.println("\n" + String((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0)/4.0)+60));
     Servo2.write((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0)/4.0)+75);
-    Serial.println(attitude.roll);
+    Serial.println((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0)/4.0)+75);
   } else {
     Servo1.write(90);
     Servo2.write(90);

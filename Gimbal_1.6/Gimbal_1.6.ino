@@ -6,18 +6,20 @@ Servo Servo1, Servo2;
 MSP msp;
 File myFile;
 
-volatile bool ini = false;
+//volatile bool ini = false;
 const int interruptPin = 2;
 
-// Define debounce period in milliseconds
-const unsigned long debouncePeriod = 2000;  // Adjust as needed
+//static unsigned long lastTriggerTime = 0;
 
-int interruptState = 1800;
+// Define debounce period in milliseconds
+const unsigned long debouncePeriod = 10000;  // Adjust as needed
+
+//int interruptState = 1800;
 
 volatile bool on = false;
 
 void setup() {
-  ini = false;
+  //ini = false;
   // Set up interrupt pin
   pinMode(interruptPin, INPUT);
 
@@ -75,6 +77,16 @@ void loop() {
   Servo2.write((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0)/4.0)+75);
   Serial.println(attitude.roll);
 */
+  /*
+  static unsigned long lastTriggerTime = 0;
+  unsigned long currentTime = millis();
+  if (currentTime - lastTriggerTime >= debouncePeriod) {
+    attachInterrupt(digitalPinToInterrupt(interruptPin), handleInterrupt, CHANGE);
+    Serial.println("Interrupt");
+    lastTriggerTime = currentTime;
+    detachInterrupt(digitalPinToInterrupt(interruptPin));
+    
+  }*/
 
   if (on == true) {
     detachInterrupt(digitalPinToInterrupt(interruptPin));
@@ -93,10 +105,15 @@ float map_float(float x, float in_min, float in_max, float out_min, float out_ma
 // Interrupt Service Routine (ISR) function
 void handleInterrupt() {
   // Variables to store last trigger time and interrupt state
+
+
   static unsigned long lastTriggerTime = 0;
   unsigned long currentTime = millis();
+
+  
+
   // Check if it's been longer than the debounce period since the last trigger
-  if (currentTime - lastTriggerTime >= debouncePeriod) {
+  //if (currentTime - lastTriggerTime >= debouncePeriod) {
     // Check the current state of the interrupt pin
     //bool currentState = digitalRead(interruptPin);
     //Serial.println("interrupt");
@@ -114,15 +131,18 @@ void handleInterrupt() {
       }
       */
     //if ((pulseIn(interruptPin, HIGH) - 1800) > 0) {
-      //interruptState = currentState;
-    if (pulseIn(interruptPin, HIGH) > 1800) {
+    //interruptState = currentState;
+    //const unsigned long timeOut = 1000;
+    //if (pulseIn(interruptPin, HIGH) > 1800){
+    if ((currentTime - lastTriggerTime)==1.0){
+      Serial.println("do gyro stuff");
       on = true;
     } else {
       on = false;
     }
     // Record the current time as the last trigger time
     lastTriggerTime = currentTime;
-  }
+  
 }
 void setGyroServo() {
 
