@@ -87,7 +87,7 @@ void loop() {
     detachInterrupt(digitalPinToInterrupt(interruptPin));
     
   }*/
-
+  //Serial.println(pulseIn(interruptPin, HIGH));
   if (pulseIn(interruptPin, HIGH) > 1800) {
     on = true;
   } else {
@@ -98,9 +98,9 @@ void loop() {
 
 
     Servo1.write((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 60);
-    Serial.println("\n" + String((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 60));
+    //Serial.println("\n" + String((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 60));
     Servo2.write((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 75);
-    Serial.println((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 75);
+    //Serial.println((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 75);
     //Serial.println("gyro pos set");
 
     //detachInterrupt(digitalPinToInterrupt(interruptPin));
@@ -117,7 +117,7 @@ float map_float(float x, float in_min, float in_max, float out_min, float out_ma
 }
 
 // Interrupt Service Routine (ISR) function
-void handleInterrupt() {
+//void handleInterrupt() {
   // Variables to store last trigger time and interrupt state
 
 
@@ -158,7 +158,7 @@ void handleInterrupt() {
     // Record the current time as the last trigger time
     lastTriggerTime = currentTime;
     */
-}
+//}
 /*
 void setGyroServo() {
 
