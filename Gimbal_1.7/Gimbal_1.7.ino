@@ -56,7 +56,7 @@ void loop() {
   } else {
     on = false;
   }
-
+  on = true;
   if (on == true) {
 
 
