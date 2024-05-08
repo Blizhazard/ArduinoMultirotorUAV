@@ -49,22 +49,22 @@ void loop() {
   msp_attitude_t attitude;
   //msp_rc_t rc;
   msp.request(MSP_ATTITUDE, &attitude, sizeof(msp_attitude_t));
-  Serial.println("\n  roll: "+String((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 75));
-  Serial.println("pitch: " + String((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 60));
+  Serial.println("\n  roll: "+String((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 70));
+  Serial.println("pitch: " + String((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 80));
   Serial.println(" Att-Yaw: " + String(attitude.yaw));
   //if (msp.request(MSP_ATTITUDE, &attitude, sizeof(msp_attitude_t)) {
-  /*
+  
   myFile = SD.open("gyro.txt", FILE_WRITE);
     if (myFile) {
       int16_t yaw;
       yaw = attitude.yaw;
-      myFile.println("Att-Roll: " + String(roll/10.0));
-      myFile.println(" Att-Pitch: " + String(pitch/10.0));
-      myFile.println(" Att-Yaw: " + String(yaw));
+      myFile.println("Att-Roll: " + String(attitude.roll/10.0));
+      myFile.println(" Att-Pitch: " + String(attitude.pitch/10.0));
+      myFile.println(" Att-Yaw: " + String(attitude.yaw));
       myFile.close();
     } else {
       Serial.println("error opening gyro.txt");
-    }*/
+    }
   //}
   //msp.request(MSP_RC, &rc, sizeof(rc));
   //uint16_t AUX2 = rc.channelValue[5];
