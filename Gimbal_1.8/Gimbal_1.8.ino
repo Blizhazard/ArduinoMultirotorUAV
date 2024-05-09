@@ -63,8 +63,8 @@ void loop() {
   if (myFile) {
     int16_t yaw;
     yaw = attitude.yaw;
-    myFile.println("Att-Roll: " + String(attitude.roll / 4.0));
-    myFile.println(" Att-Pitch: " + String(attitude.pitch / 4.0));
+    myFile.println("Att-Roll: " + String(map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0));
+    myFile.println(" Att-Pitch: " + String(map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0));
     myFile.println(" Att-Yaw: " + String(yaw));
     myFile.close();
   } else {

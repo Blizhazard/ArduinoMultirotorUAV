@@ -64,25 +64,25 @@ void loop() {
     myFile.println(" Att-Yaw: " + String(yaw));
     myFile.close();
   } else {
-    Serial.println("error opening gyro.txt");
+    //Serial.println("error opening gyro.txt");
     SD.begin(10);
   }
   
   //remove the  ",1" the line below
-  if (pulseIn(interruptPin, HIGH,1) > 1800) {
+  if (pulseIn(interruptPin, HIGH) > 1800) {
     on = true;
   } else {
     on = false;
   }
   //comment line below 
-  on = true;
+  //on = true;
   if (on == true) {
 
 
-    Servo1.write((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 66.62);
-    Serial.println("\n" + String((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 66.62));
-    Servo2.write((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 62.5);
-    Serial.println((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 62.5);
+    Servo1.write((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 5.0) + 66.62);
+    //Serial.println("\n" + String((map_float(attitude.pitch, 90.0, -90.0, 0.0, 180.0) / 4.0) + 66.62));
+    Servo2.write((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 5.0) + 62.5);
+    //Serial.println((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 62.5);
   } else {
     Servo1.write(90);
     Servo2.write(90);
