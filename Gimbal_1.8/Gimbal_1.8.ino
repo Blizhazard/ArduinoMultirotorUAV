@@ -25,6 +25,10 @@ void setup() {
   delay(1000);
   Servo1.write(90);
   Servo2.attach(5);
+  Servo2.write(180);
+  delay(1000);
+  Servo2.write(0);
+  delay(1000);
   Servo2.write(90);
   
   if (!SD.begin(10)) {
@@ -59,8 +63,8 @@ void loop() {
   if (myFile) {
     int16_t yaw;
     yaw = attitude.yaw;
-    myFile.println("Att-Roll: " + String(attitude.roll / 10.0));
-    myFile.println(" Att-Pitch: " + String(attitude.pitch / 10.0));
+    myFile.println("Att-Roll: " + String(attitude.roll / 4.0));
+    myFile.println(" Att-Pitch: " + String(attitude.pitch / 4.0));
     myFile.println(" Att-Yaw: " + String(yaw));
     myFile.close();
   } else {
