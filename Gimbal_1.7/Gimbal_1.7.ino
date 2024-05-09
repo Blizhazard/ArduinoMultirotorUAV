@@ -7,7 +7,7 @@ MSP msp;
 File myFile;
 
 const int interruptPin = 2;
-
+bool iniSD = false;
 volatile bool on = false;
 
 void setup() {
@@ -32,6 +32,19 @@ void setup() {
   
 }
 void loop() {
+  
+  /*
+  while (!iniSD) {
+    Serial.println("initialization failed!");
+    Serial.println(SD.exists("gyro.txt"));
+    delay(1000);
+    Serial.println(digitalRead(10));
+    if (SD.begin(10)) {
+      Serial.println("breakout");
+      iniSD = true;
+      break;
+    }
+  }*/
   msp_attitude_t attitude;
   msp.request(MSP_ATTITUDE, &attitude, sizeof(msp_attitude_t));
   //Serial.println("\n  roll: "+String((map_float(attitude.roll, 180.0, -180.0, 0.0, 180.0) / 4.0) + 66.62));
@@ -48,10 +61,11 @@ void loop() {
     myFile.close();
   } else {
     Serial.println("error opening gyro.txt");
+    SD.begin(10);
   }
   
-  
-  if (pulseIn(interruptPin, HIGH) > 1800) {
+  //remove the  ",1" the line below
+  if (pulseIn(interruptPin, HIGH,1) > 1800) {
     on = true;
   } else {
     on = false;
