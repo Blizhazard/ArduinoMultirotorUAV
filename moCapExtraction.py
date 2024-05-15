@@ -1,4 +1,3 @@
-import re
 from openpyxl import Workbook
 import matplotlib.pyplot as plt
 
@@ -16,9 +15,8 @@ def create_graph(numbers):
     
     
 # Create Excel workbook and sheet
-wb = Workbook()
-ws = wb.active
-ws.title = "Numbers"
+ws = Workbook.load_workbook(filename = 'moCapFlightData.xlsx')
+
     
 roll = []
 pitch = []
@@ -46,6 +44,3 @@ create_graph(roll)
 create_graph(pitch)
 create_graph(yaw)
 
-# Save Excel file
-wb.save("output.xlsx")
-print("Numbers extracted and saved to output.xlsx")
