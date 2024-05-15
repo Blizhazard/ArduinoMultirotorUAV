@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" modified="2024-05-13T21:56:11.866Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="cGpRCRy8CFSZr3s76V17" version="24.4.0" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="767" dy="1169" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="wFGCu8srwnu4NARR1gRQ-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Start" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;arcSize=50;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="80" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-7" target="wFGCu8srwnu4NARR1gRQ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-7" value="Setup servo positions&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="230" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-11" target="wFGCu8srwnu4NARR1gRQ-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-11" value="Try to initialize SD card" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="310" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-14" target="wFGCu8srwnu4NARR1gRQ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-14" value="Set pin modes" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="140" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-18" target="wFGCu8srwnu4NARR1gRQ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-18" value="Request flight data" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="400" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-22" target="wFGCu8srwnu4NARR1gRQ-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-26" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wFGCu8srwnu4NARR1gRQ-25">
+          <mxGeometry x="-0.0257" y="-5" relative="1" as="geometry">
+            <mxPoint x="-10" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-22" target="wFGCu8srwnu4NARR1gRQ-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-29" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wFGCu8srwnu4NARR1gRQ-28">
+          <mxGeometry x="-0.1075" relative="1" as="geometry">
+            <mxPoint y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-22" value="Is SD card initialized" style="rhombus;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="167.5" y="480" width="95" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-24" target="wFGCu8srwnu4NARR1gRQ-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-24" value="Try to initialize it again" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="630" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-27" target="wFGCu8srwnu4NARR1gRQ-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="680" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="690" />
+              <mxPoint x="215" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-27" value="Write flight data to SD card" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="497.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-33" target="wFGCu8srwnu4NARR1gRQ-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-46" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wFGCu8srwnu4NARR1gRQ-45">
+          <mxGeometry x="-0.1636" relative="1" as="geometry">
+            <mxPoint x="15" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-33" target="wFGCu8srwnu4NARR1gRQ-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-49" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wFGCu8srwnu4NARR1gRQ-48">
+          <mxGeometry x="-0.0861" y="-2" relative="1" as="geometry">
+            <mxPoint x="-5" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-33" value="Is the signal from receiver high (gear switch function)" style="rhombus;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="152.5" y="720" width="125" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-44" target="wFGCu8srwnu4NARR1gRQ-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="581" y="900" />
+              <mxPoint x="581" y="380" />
+              <mxPoint x="215" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-44" value="Set servo position to counteract the pitch and roll" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="155" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wFGCu8srwnu4NARR1gRQ-47" target="wFGCu8srwnu4NARR1gRQ-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="581" y="780" />
+              <mxPoint x="581" y="380" />
+              <mxPoint x="215" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFGCu8srwnu4NARR1gRQ-47" value="Set servo position to default 90 degree angle" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="360" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
